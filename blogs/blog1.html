@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-1 | manojanasuri</title>
+    <link href="../style.css" rel="stylesheet">    
+    <style>       
+        p,li{
+            line-height: 2em;             
+        }                    
+    </style>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">DEVELOPER</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="../index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="../projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="../blogs.html">blogs</a>
+            </li> 
+        </ul>
+    </nav>    
+
+    <div class="container container-center">
+        <section class="section">
+            <h1 style="text-align: left; margin-bottom: 0%;">
+                Writing good commit messages
+            </h1>
+            <small>last updated: 18th June,2021</small>
+            <img src="/images/git.png" width="80%" 
+            style="margin: 10%;">
+        </section>
+
+        <section class="section">        
+            <h3>What is a commit message?</h3>
+            <p>
+                The commit command is used to save changes to a local repository after staging in Git. However, before you can save changes in Git, you have to tell Git which changes you want to save as you might have made tons of edits. A great way to do that is by adding a commit message to identify your changes.
+            </p>
+            <h3>Commit Options</h3>
+            <ul>
+                <li>
+                    <strong class="text-primary-color">-m</strong>
+                    <p>This option sets the commit's message.</p>
+                    <div class="bg-diff">
+                        git add README.md<br>
+                        git commit -m "update README"
+                    </div>
+                </li>
+                <li>
+                    <strong class="text-primary-color">-a or --all</strong>
+                    <p>
+                        This option automatically commits all (including new) tracked, modified or deleted files.
+                    </p>
+                    <div class="bg-diff">
+                        git commit -a -m "Add contact section in blog,project pages"
+                    </div>
+                </li>
+                <li>
+                    <strong class="text-primary-color">--amend</strong>
+                    <p>
+                        This option rewrites the very last commit with any currently staged changes or a new commit message and should only be performed on commits that have not been pushed to a remote repository, yet.
+                    </p>
+                    <div class="bg-diff">
+                        git add .<br>
+                        git commit --amend -m "Update contact section in blog,project pages"
+                    </div>
+                </li>                
+            </ul>
+            </section>
+            
+            <section class="section">
+            <h3>Why should you write good commit messages?</h3>
+            <p>You might say, "It's just a personal project." Yes, you work alone now, but what happens when you work with a team or contribute to open source?</p>
+            <p>A well-crafted Git commit message is the best way to communicate context about a change to other developers working on that project, and indeed, to your future self.</p>
+            <p>Have you ever tried running git log on one of your old projects to see the "weird" commit messages you have used since its inception? It can be hard to understand why you made some changes in the past, and you'll wish you read this article earlier :).</p>
+            <p>Commit messages can adequately communicate why a change was made, and understanding that makes development and collaboration more efficient.</p>
+        </section>
+
+        <section class="section">
+            <h3>template of a good commit message</h3>
+            <ol>
+                <li>Specify the type of commit:</li>
+                <ul>
+                    <li>
+                        <strong class="text-primary-color">feat</strong>: The new feature you're adding to a particular application
+                    </li>
+                    <li><strong class="text-primary-color">fix</strong>: A bug fix</li>
+                    <li><strong class="text-primary-color">style</strong>: Feature and updates related to styling</li>
+                    <li><strong class="text-primary-color">refactor</strong>: Refactoring a specific section of the codebase</li>
+                    <li><strong class="text-primary-color">test</strong>: Everything related to testing</li>
+                    <li><strong class="text-primary-color">docs</strong>: Everything related to documentation</li>
+                    <li><strong class="text-primary-color">chore</strong>: Regular code maintenance.[ You can also use emojis to represent commit types]</li>  
+                    </ul>                                  
+                <li>Separate the subject from the body with a blank line</li>
+                <li>Your commit message should not contain any whitespace errors</li>
+                <li>Remove unnecessary punctuation marks</li>
+                <li>Do not end the subject line with a period</li>
+                <li>Capitalize the subject line and each paragraph</li>
+                <li>Use the imperative mood in the subject line</li>
+                <li>Use the body to explain what changes you have made and why you made them.</li>
+                <li>Do not assume the reviewer understands what the original problem was, ensure you add it.</li>
+                <li>Do not think your code is self-explanatory</li>
+                <li>Follow the commit convention defined by your team</li>
+            </ol>
+            </section>
+            <section class="section">
+                <h3>Conclusion</h3>
+                <p>The most important part of a commit message is that it should be clear and meaningful. In the long run, writing good commit messages shows how much of a collaborator you are. The benefits of writing good commit messages are not only limited to your team, but indeed expand to yourself and future contributors.</p>
+            </section>                     
+    </div>
+
+    <footer class="footer">
+        <div class="footer-header">connect with me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/manojanasuri16/">
+                    github
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/manojanasuri16/">
+                    linkedin
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/manojanasuri16">
+                    twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+</body>
+</html>

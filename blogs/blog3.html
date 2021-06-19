@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-3 | manojanasuri</title>
+    <link href="../style.css" rel="stylesheet">    
+    <style>       
+        p,li{
+            line-height: 2em;             
+        }                    
+    </style>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">DEVELOPER</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="../index.html">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="../projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="../blogs.html">blogs</a>
+            </li> 
+        </ul>
+    </nav>    
+
+    <div class="container container-center">
+        <section class="section">
+            <h1 style="text-align: left; margin-bottom: 0%;">Why Use Semantic HTML?</h1>
+            <small>last updated: 19th June,2021</small>
+            <img src="/images/semantic.jpg" width="95%" style="display: block; margin: 5% 2% 0% 2%;"/>
+        </section>
+        <section class="section">
+            <p>
+                An important principle in web design is the idea of using HTML elements to indicate what they actually are, rather than how they may appear in the browser by default. This is known as using semantic HTML.
+            </p>
+        </section>
+        <section class="section">
+            <h3>What Is Semantic HTML?</h3>
+            <p>Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <&nbsp;p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.</p>
+            <p>On the flip side of this equation, tags such as <&nbsp;b> and <&nbsp;i> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup.
+            Examples of semantic HTML tags include:
+            <ul>
+                <li>Header tags <&nbsp;h1> through <&nbsp;h6></li>
+                <li><&nbsp;blockquote></li>
+                <li><&nbsp;code></li>
+                <li><&nbsp;em></li>
+            </ul>  
+            There are many more semantic HTML tags to use as you build a standards-compliant website.</p>            
+        </section>
+        <section class="section">
+            <h3>Why You Should Care About Semantics</h3>
+            <p>
+                The benefit of writing semantic HTML stems from what should be the driving goal of any web page: the desire to communicate. By adding semantic tags to your document, you provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.
+            </p>
+            <p>
+                Semantic HTML tags provide information about the contents of those tags that goes beyond just how they look on a page. Text that is enclosed in the <&nbsp;code> tag is immediately recognized by the browser as some type of coding language. Instead of trying to render that code, the browser understands that you are using that text as an example of the code for the purposes of an article or online tutorial.                    
+            </p>
+            <p>
+                Using semantic tags gives you many more hooks for styling your content, too. Perhaps today you prefer to have your code samples display in the default browser style, but tomorrow, you might want to call them out with a gray background color; later still, you might want to define the precise mono-spaced font family or font stack to use for your samples. You can do all of these things easily by using semantic markup and smartly applied CSS.
+            </p>
+        </section>
+        <section class="section">
+            <h3>Using Semantic Tags Correctly</h3>
+            <p>
+                When using semantic tags to convey meaning rather than for presentation purposes, be careful that you don't use them incorrectly simply for their common display properties. Some of the most commonly misused semantic tags include:
+                <ul>
+                    <li>
+                        blockquote — Some people use the <&nbsp;blockquote> tag for indenting text that is not a quotation. This is because blockquotes are indented by default. If you simply want to indent text that's not a blockquote, use CSS margins instead.
+                    </li>
+                    <li>
+                        p — Some web editors use <&nbsp;p>&nbsp;<&nbsp;/p> (a non-breaking space contained in a paragraph) to add extra space between page elements, rather than defining actual paragraphs for the text of that page. As in the previous example, you should use the margin or padding style property instead to add space.​
+                    </li>
+                    <li>
+                        ul — As with <&nbsp;blockquote>, enclosing text inside a <&nbsp;ul> tag indents that text in most browsers. This is both semantically incorrect and invalid HTML, because only <&nbsp;li> tags are valid within a <&nbsp;ul> tag. Again, use the margin or padding style to indent text.
+                    </li>
+                    <li>
+                        h1, h2, h3, h4, h5, and h6 — You can use heading tags to make fonts bigger and bolder, but if the text is not a heading, use the font-weight and font-size CSS properties instead.
+                    </li>
+                </ul>
+                </p>
+                <p>By using HTML tags that have meaning, you create pages that impart more information than those that simply surround everything with <&nbsp;div> tags. </p>            
+        </section>
+        <section class="section">
+            <h3>Which HTML Tags Are Semantic?</h3>
+            <p>Although nearly every HTML4 tag and all the HTML5 tags have semantic meanings, some tags are primarily semantic.</p>
+            <p>For example, HTML5 has redefined the meaning of the <&nbsp;b> and <&nbsp;i> tags to be semantic. The <&nbsp;b> tag doesn't convey extra importance; rather, the tagged text is typically rendered in bold. Likewise, the <&nbsp;i> tag doesn't convey extra importance or emphasis; rather, it defines text that is typically rendered in italics.</p>
+            <h3>Semantic HTML Tags</h3>
+            <table>
+                <tr>
+                  <td><&nbsp;abbr></td>
+                  <td>Abbrevation</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;acronym></td>
+                    <td>Acronym</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;blockquote></td>
+                    <td>Long quotation</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;dfn></td>
+                    <td>Definition</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;address></td>
+                    <td>Address for author(s) of the document</td>                    
+                </tr>
+                <tr>
+                    <td><&nbsp;cite></td>
+                    <td>Citation</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;code></td>
+                    <td>Code reference</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;tt></td>
+                    <td>Teletype text</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;div></td>
+                    <td>Logical divison</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;span></td>
+                    <td>Generic inline style container</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;del></td>
+                    <td>Deleted text</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;ins></td>
+                    <td>Inserted Text</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;em></td>
+                    <td>Emphasis</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;strong></td>
+                    <td>Strong emphasis</td>
+                </tr>
+                <tr>
+                    <td><&nbsph1></td>
+                    <td>First-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsph2></td>
+                    <td>Second-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsph3></td>
+                    <td>Third-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsph4></td>
+                    <td>Fourth-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsph5></td>
+                    <td>Fifth-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsph6></td>
+                    <td>Six-level headline</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;hr></td>
+                    <td>Thematic break</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;kbd></td>
+                    <td>Text to be entered by the user</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;pre></td>
+                    <td>Pre-formatted text</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;q></td>
+                    <td>Short inline quotation</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;samp></td>
+                    <td>Sample output</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;sub></td>
+                    <td>Subscript</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;sup></td>
+                    <td>Superscript</td>
+                </tr>
+                <tr>
+                    <td><&nbsp;var></td>
+                    <td>Variable or user defined text</td>
+                </tr>
+              </table>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-header">connect with me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/manojanasuri16/">
+                    github
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/manojanasuri16/">
+                    linkedin
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/manojanasuri16">
+                    twitter
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+</body>
+</html>
